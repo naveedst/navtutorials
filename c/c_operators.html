@@ -1,0 +1,906 @@
+<!-- === BEGIN HEADER === -->
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <!-- Title -->
+    <title>Operators in C</title>
+    <!-- Meta -->
+     <!-- Meta -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <meta name="description" itemprop="description" content="navtutorials.com is a programming blog focused on programming, C programming, algorithms, data structures, C programming interview questions, Data structures interview questions, java interview questions, c programming source codes,operator, operand, c operators, single variable, unary, unary operator, two variables, binary, binary operators, three variables, ternary, ternary operators, Arithmetic Operators, Assignment Operators, Unary Operators,
+    Ternary Operators,Relational Operators, Logical Operators, Bitwise Operators,Miscellaneous Operators, addition, subtraction, multiplication, division, modulus,Unary minus operator,Increment Operator, decrement operator, is less than, is less than or equal to,is greater than,is greater than or equal to,is equal to,is not equal to, Logical AND,Logical OR, Logical NOT,sizeof() Operator,& Operator, * operator, Precedence of Operators in C, navtutorials.com, navtutorials, nav, newtutorials."/>
+
+    <meta name="author" content="Naveed">
+
+    <meta name="keywords" itemprop="keywords" content="operator, operand, c operators, single variable, unary, unary operator, two variables, binary, binary operators, three variables, ternary, ternary operators, Arithmetic Operators, Assignment Operators, Unary Operators,
+    Ternary Operators,Relational Operators, Logical Operators, Bitwise Operators,Miscellaneous Operators, addition, subtraction, multiplication, division, modulus,* operator,Unary minus operator,Increment Operator, decrement operator, is less than, is less than or equal to,is greater than,is greater than or equal to,is equal to,is not equal to, Logical AND,Logical OR, Logical NOT,sizeof() Operator,& Operator, Precedence of Operators in C,Program to understand operation of bitwise operators, Program to know how to use sizeof() operator, navtutorials.com, navtutorials, nav, newtutorials."/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <!-- Favicon -->
+    <link href="favicon.html" rel="shortcut icon">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/nexus.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/custom.css" rel="stylesheet">
+    <!-- Google Fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,300" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
+
+    <!--My fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    
+</head>
+<body>
+    <div id="pre_header" class="visible-lg"></div>
+    <div id="header" class="container">
+        <div class="row">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="../index.html" title="">
+                    <img src="assets/img/logo.png" alt="Logo" />
+                </a>
+            </div>
+            <!-- End Logo -->
+
+            <!-- Top Menu -->
+            <div class="col-md-12 margin-top-30">
+                <div id="hornav" class="pull-right visible-lg">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../index.html">Home</a></li>
+
+                        <li><span>Tutorials</span>
+                            <ul>
+                                <li><a href="../programming_library.html">Programming</a></li>
+                                <li><a href="../academic_library.html">Academic</a></li>
+                                <li><a href="../web_programming_library.html">Web Programming</a></li>
+                                <li><a href="../exam_prepration_library.html">Exam Prepration</a></li> 
+                                <li><a href="../general_aptitude_library.html">General Aptitude</a></li>
+                                <li><a href="../verbal_ability_library.html">Verbal Ability</a></li>
+                            </ul>
+                        </li>
+
+
+
+                        <li><span>Interview</span>
+                            <ul>
+                                <li><a href="../interview_section/interview_question_index.html">Interview Questions</a></li>
+                                <li><a href="../code_snippets_library.html">Code Snippets</a></li>
+                            </ul>
+                        </li>   
+
+
+                        <li><span>Blog</span>
+                            <ul>
+                                <li><a href="../blog.html">Blog</a></li>
+                                <li><a href="../article.html">Articles</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li><a href="../books.html">Books</a></li>
+                        <li><a href="../contact_us.html">Contact</a></li>
+                    </ul>               </div>
+                </div>
+                <div class="clear"></div>
+                <!-- End Top Menu -->
+            </div>
+        </div>
+        <!-- === END HEADER === -->
+        <div id="content" class="container">
+            <!-- === BEGIN CONTENT === -->    <div class="row margin-vert-30">
+            <!-- Begin Sidebar Menu -->
+            <div class="col-md-3">
+                <ul class="list-group sidebar-nav" id="sidebar-nav">
+                    
+                     <!-- Home -->
+                    <li class="list-group-item">
+                       <a href="c_library.html">C-Home</a>
+                    </li>
+                    <!-- End of home-->
+
+                    <!-- Typography -->
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-fundamental">Fundamentals in C</a>
+                        <ul id="collapse-fundamental" class="collapse">
+                            <li><a href="c_keywords.html"></i>Keywords and Constants</a></li>
+                            <li><a href="c_datatypes.html">Data Types</a></li>
+                            <li><a href="c_inputfunctions.html">Input/Output Functions</a></li>
+                            <li><a href="c_operators.html">Operators in C</a></li>
+                        </ul>
+                    </li>
+                    <!-- End Typography -->
+                    <!-- Control statements -->
+                    <li class="list-group-item list-toggle">
+                        <a class="accordion-toggle" href="#collapse-control" data-toggle="collapse">Control Statements in C</a>
+                        <ul id="collapse-control" class="collapse">
+                            <li><a href="c_ifstatement.html"></i>if.. else statement</a></li>
+                            <li><a href="c_dowhile.html"></i>do.. while loop</a></li>
+                            <li><a href="c_while.html"></i>While loop</a></li>
+                            <li><a href="c_forloop.html"></i>for loop</a></li>
+                            <li><a href="c_switch.html">Switch Statement</a></li>
+                            <li><a href="c_break.html">break statement</a></li>
+                            <li><a href="c_continue.html">Continue Statement</a></li>
+                            <li><a href="c_goto.html">goto statement</a></li>
+                            <li><a href="c_return.html">return statement</a></li>
+                        </ul>
+                    </li>                    <!-- End Control statements -->
+                    <!-- Arrays -->
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-arrays">Arrays</a>
+                        <ul id="collapse-arrays" class="collapse">
+                            <li><a href="c_1darray.html">Single dimensional Array</a></li>
+                            <li><a href="c_2darray.html">Two dimensional Array</a></li>
+                            <li><a href="c_3darray.html">Three dimensional Array</a></li>
+                        </ul>
+                    </li>
+                    <!-- End Arrays -->
+                    <!-- Functions -->
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-functions">Functions</a>
+                        <ul id="collapse-functions" class="collapse">
+                            <li><a href="c_functions.html">Parts of function</a></li>
+                            <li><a href="c_formalarguments.html">Formal & Actual Arguments</a></li>
+                            <li><a href="c_recursivefunction.html">Recursive Function</a></li>
+                        </ul>
+                    </li>
+                    <!-- End Functions -->
+
+                    <!-- Strings -->                    
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-strings">Strings</a>
+                        <ul id="collapse-strings" class="collapse">
+                            <li><a href="c_characters.html">Characters</a></li>
+                            <li><a href="c_strings.html">Strings</a></li>
+                            <li><a href="c_strlen.html">strlen()</a></li>
+                            <li><a href="c_strcpy.html">strcpy() and strncpy()</a></li>
+                            <li><a href="c_strcat.html">strcat()</a></li>
+                            <li><a href="c_strcmp.html">strcmp() and strnicmp()</a></li>
+                            <li><a href="c_strupr.html">strupr() and strlwr()</a></li>
+                            <li><a href="c_strrev.html">strrev()</a></li>
+                            <li><a href="c_strchr.html">strchr()</a></li>
+                            <li><a href="c_strstr.html">strstr()</a></li>
+                        </ul>
+                    </li>
+                    <!-- End of Strings -->
+                    
+                    <!-- Storage classes -->
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-storage">Storage Classes</a>
+                        <ul id="collapse-storage" class="collapse">
+                            <li><a href="c_automicstorage.html">Automic storage class</a></li>
+                            <li><a href="c_registerstorage.html">Register storage class</a></li>
+                            <li><a href="c_staticstorage.html">static storage class</a></li>
+                            <li><a href="c_externalstorage.html">External storage class</a></li>
+                            <li><a href="c_localvariables.html">Local variables</a></li>
+                        </ul>
+                    </li>
+                    <!-- End Storage classes -->
+
+                    <!-- Pointers -->
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-pointers">Pointers</a>
+                        <ul id="collapse-pointers" class="collapse">
+                            <li><a href="c_pointers.html">Pointers arithmetic</a></li>
+                            <li><a href="c_dynamicmemory.html">Dynamic memory allocation</a></li>
+                            <li><a href="c_arraypointers.html">Array of pointers</a></li>
+                            <li><a href="c_functionpointers.html">Function pointers</a></li>
+                            <li><a href="c_callback.html">callback mechanism</a></li>
+                            <li><a href="c_danglingpointers.html">Dangling pointers</a></li>
+                            <li><a href="c_nearpointers.html">Near,far and huge pointers</a></li>
+                            <li><a href="c_genericpointer.html">Generic pointer</a></li>
+                            <li><a href="c_sizeofpointer.html">size of a Pointer</a></li>
+                            <li><a href="c_pointertopointer.html">Pointer to pointer</a></li>
+                            <li><a href="c_pointeradvantage.html">Advantages & Disadvantages</a></li>
+                        </ul>
+                    </li>
+                    <!-- End of Pointers -->
+
+                    <!-- Structures and unions -->
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-structures">Structures and Unions</a>
+                        <ul id="collapse-structures" class="collapse">
+                            <li><a href="c_structures.html">Structures</a></li>
+                            <li><a href="c_structurepointer.html">Structure pointer</a></li>
+                            <li><a href="c_arraayofstructure.html">Array of structures</a></li>
+                            <li><a href="c_arraypointersstructures.html">Array of Pointers to structures</a></li>
+                            <li><a href="c_nestedstructure.html">Nested Structures</a></li>
+                            <li><a href="c_union.html">Union</a></li>
+                        </ul>
+                    </li>
+                    <!-- Structures and Unions-->
+
+
+                    <!-- Files -->
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-files">Files</a>
+                        <ul id="collapse-files" class="collapse">
+                            <li><a href="c_files.html">Files concepts</a></li>
+                            <li><a href="c_fileswithcharacter.html">Files with characters</a></li>
+                            <li><a href="c_fileswithstrings.html">Files with strings</a></li>
+                            <li><a href="c_binaryfiles.html">Binary files</a></li>
+                            <li><a href="c_randomaccessoffile.html">Random accessing of file</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- End of files -->
+
+                    <!-- command line-->
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-commandline">Command Line</a>
+                        <ul id="collapse-commandline" class="collapse">
+                            <li><a href="c_commandlinearguments.html">Command Line Arugments</a></li>
+                            <li><a href="c_showcommand.html">Show Command</a></li>
+                            <li><a href="c_cpycommand.html">copy command</a></li>
+                            <li><a href="c_destroycommand.html">destroy command</a></li>
+                            <li><a href="c_freshcommand.html">fresh command</a></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <!-- End of Command line -->
+                </ul>
+            </div>
+            <!-- End Sidebar Menu --> 
+
+            <div class="col-md-9">
+
+            <div style="margin-left:03px;margin-top:10px;">
+                <div id="bc2" class="myBreadcrumb">
+                <a href="../index.html" class="active"><i class="fa fa-home fa-2x"></i></a>
+                <a href="../programming_library.html">Programming Library</a>
+                <a href="c_operators.html"><div>Operators in C</div></a>
+            </div> 
+             
+                <h1><B><center>C Programming Operators</B></cemter></h1>
+                <HR>
+                <h4><B>Operators:</B></h4>
+                <ul>
+                    <li><p>Operators are used in programs to manipulate data and variables.</p></li>
+                    <li><p>If an operator acts on single variable, then it is called ‘Unary Operator’.</p></li>
+                    <li><p>If an operator acts on  two variables then it is called ‘Binary operator’.</p></li>
+                    <li><p>If an operator acts on three variables then it is called ‘Ternary operator’.</p></li>
+                </ul
+
+                <caption><center><b>The below table specifies list of Operators available in C</b></center></caption>
+
+                 <table align="center" cellpadding="5" width="70%" height="50%" cellspacing="2">
+                        <tr align="center">
+                            <td><b>Operator Category</b></td>
+                            <td><b>Operator Symbols</b></td>
+                        </tr>
+                        <tr align="center"> 
+                            <td>Arithmetic Operators</td>
+                            <td>+,-,*,/,%</td>                           
+                        </tr>
+                        <tr align="center">
+                            <td>Assignment Operators</td>
+                            <td>=,+=,-=,*=,/=,%=</td>
+                        </tr>
+                        <tr align="center">
+                            <td>Unary Operators</td>
+                            <td>-,++ and --</td>
+                         </tr>
+                         <tr align="center">
+                            <td>Ternary Operators</td>
+                            <td>?:</td>
+                         </tr>
+                         <tr align="center">
+                            <td>Relational Operators</td>
+                            <td><,<=,>,>=,= =,!=</td>
+                         </tr>
+                         <tr align="center">
+                            <td>Logical Operators</td>
+                            <td>&&,| |, !</td>
+                         </tr>
+                         <tr align="center">
+                            <td>Bitwise Operators</td>
+                            <td>~,&,|,^,<<,>> </td>
+                         </tr>
+                         <tr align="center">
+                            <td>Miscellaneous Operators</td>
+                            <td>sizeof(),&,*, ,</td>
+                         </tr>   
+                        </table>
+
+                     <h4><b>Arithmetic Operators</b></h4> 
+                     <li><p>These operators are useful to perform basic arithmetic operations.</p></li>
+
+                     <table align="center" cellpadding="5" width="50%" height="50%" cellspacing="2">
+                        <tr align="center">
+                            <td><b>Operator </b></td>
+                            <td><b>Meaning</b></td>
+                        </tr>
+                        <tr align="center"> 
+                            <td>+</td>
+                            <td>Addition</td>                           
+                        </tr>
+                        <tr align="center">
+                            <td>-</td>
+                            <td>Subtraction</td>
+                        </tr>
+                        <tr align="center">
+                            <td>*</td>
+                            <td>Multiplication</td>
+                        </tr>
+                        <tr align="center">
+                            <td>/</td>
+                            <td>Division</td>
+                        </tr>
+                        <tr align="center">
+                            <td>%</td>
+                            <td>Modulus Operator</td>
+                        </tr>
+                    </table>
+
+                    <h4><B>Assignment Operators</B></h4>
+                    <li><p>The purpose of assignment operator is to assign or store a vale into a variable.</p></li>
+
+                    <pre class="prettyprint prettyprinted">
+<code><span class="com">int </span><span class="str">x</span><span class="str">=</span><span class="str">15;</span><span class="str">   /* the value 15 is stored into x */</span><BR><span class="str">int </span><span class="str">x=</span><span class="str">y;</span><span class="str">    /* Store y value into x */</span></code></pre>
+                <li><p> from above examples,we can understand that always the right hand side value is stored into the left side variable.So, we cannot write something like this.</p></li>
+
+                <pre class="prettyprint prettyprinted">
+<code><span class="com">15</span><span class="str">=x;</span><span class="str">     /*invalid, since variable is not present at left side */</span></code></pre>
+            
+                <li><p>Using the assignment operator (=), we can write expressions in a compact form also.</p></li>
+
+                <pre class="prettyprint prettyprinted">
+<code><span class="com">sal</span><span class="str">=</span><span class="str">sal+500       can be written as sal+=500</span>
+<span class="str">num</span><span class="str">=</span><span class="str">num-100       can be written as num-=100</span>
+<span class="str">p</span><span class="str">=</span><span class="str">p/100           can be written as p/=100</span></code></pre>
+
+                <h4><B>Unary Operators:</B></h4>
+                <li><b>Unary minus operator (-):</b> This operator is useful to negate a value. Ngeation means converting a positive valye into negative value and vice versa.
+
+                <pre class="prettyprint prettyprinted">
+<code><span class="com">int</span><span class="str"> x=7;</span>
+<span class="str">x=-x;</span><span class="str">    /* negate the value of x and store into x */</span></code></pre>    
+                Since x value is 7,-x will be -7. This will be stored into left side variable x so,after execution, x value will become -5. </li>
+
+                <li><B>Increment Operator (++):</B> This operator is useful to increase the value of a variable by 1.
+                <pre class="prettyprint prettyprinted">
+<code><span class="com">int</span><span class="str"> n=5</span><span class="str">      /*value of n is 5 */</span>
+<span class="str">++n;</span><span class="str">         /*now n value becomes 6 */</span></code></pre>
+                we can write ++ symbol either before or after the variable. 
+                
+                <pre class="prettyprint prettyprinted">
+<code><span class="com">n++;</span><span class="str">       /* in this case also, n value will be incremented by 1 */</span></code></pre>
+                
+                <p>writitng ++ before a variable is called 'pre increment' and writing ++ after a varaible is called 'post increment'. Both will increase the value of the variable. But there is a difference in the timining of the increment.<br>In pre incrementation, the value of the variable is incremented first, any other operation is done next. In post incrementation, all operations are done first.</p>
+                </li>
+
+                <li><B>Decrement Operator (--):</B> This operator decreases the value of a variable by 1.
+                <pre class="prettyprint prettyprinted">
+<code><span class="com">int</span><span class="str"> n=8;   /* value of n is 8 */</span>
+<span class="str">--n;</span><span class="str">       /* now n value becomes 4 */</span></code></pre>    
+                we can write -- symbol either before or after the variable.
+                <pre class="prettyprint prettyprinted">
+<code><span class="com">n--;</span><span class="str">       /* in this case also, n value will be decremented by 1 */</span></code></pre>
+                
+                <p>writitng -- before a variable is called 'pre decrementation' and writing -- after a varaible is called 'post decrementation'. Both will decrease the value of the variable by 1. But there is a difference in the timining of the increment.<br>In pre decrementation, the value of the variable is decremented first, any other operation is done next. In post decrementation, all operations are done first and demonstration is done at the end.</p>
+                </li>
+
+                <h4><B>Ternary Operator( ?: )</B></h4>
+                <li><p>This operator is called 'Ternary operator' because it acts on 3 expressions. It is also called as 'Conditional Operator'.</p>
+
+                <pre class="prettyprint prettyprinted">
+<code><span class="com"><b>General Syntax:</b></span><span class="str"> variable=expression1 ? expression2 : expression3;</span></code></pre>
+                if expression1 is true, then the value of expression2 will be evaluated and stored into the variable. If expression1 is false, then the value of expression3 will be stored into the variable.
+
+                <pre class="prettyprint prettyprinted">
+<code><span class="com">if(expression)</span>
+<span class="str">          variable=expression2;</span>
+<span class="str">     else variable=expression3;</span></code></pre>
+                The preceding statement is called 'Conditional statement', because it performs a task depending on whether the condition is true or false.
+
+                <pre class="prettyprint prettyprinted">
+ <code><span class="str">   max=(num1 > num2) ? num1 : num2;</span></code></pre>
+                In below example,if num1 is really greater than num2, then num1 vale is stored into max, otherwise num2 vale is stored into max. The same expression can be rewritten in C as:
+
+                <pre class="prettyprint prettyprinted">
+<code><span class="str">    if(num1>num2)</span>
+<span class="str">                  max=num1;</span>
+<span class="str">          else max=num2;</span></code></pre>
+                </li>
+
+                <h4><B>Relational Operators</B></h4>
+                <li><p>These Operators are useful to compare two quantities, to know whether a quantity is bigger or smaller than another one or not.</p></li>
+
+                <caption><center><b>Relational Operators</b></center></caption>
+                    <table align="center" cellpadding="5" width="50%">
+                        <tr align="center">
+                            <td><b>Operator</b></td>
+                            <td><b>Meaning</b></td>
+                        </tr>
+                        <tr align="center"> 
+                            <td> < </td>
+                            <td> is less than</td>                           
+                        </tr>
+                        <tr align="center">
+                            <td> <= </td>
+                            <td> is less than or equal to</td>
+                        </tr>
+                        <tr align="center">
+                            <td> > </td>
+                            <td> is greater than</td>
+                        </tr>
+                        <tr align="center">
+                            <td> >= </td>
+                            <td> is greater than or equal to</td>
+                        </tr>
+                        <tr align="center">
+                            <td> == </td>
+                            <td> is equal to</td>
+                        </tr>
+                        <tr align="center">
+                            <td> != </td>
+                            <td> is not equal to </td>
+                        </tr>      
+                        </table>
+
+                     <h4><B>Logical Operators</B></h4>
+                     <li><p>Logical operators are used to join two or more conditions when we join two or more simple conditions, it becomes a compund condition.</p></li>
+
+                    <caption><center><b>Logical Operators</b></center></caption>
+                    <table align="center" cellpadding="5" width="40%">
+                        <tr align="center">
+                            <td><b>Operator</b></td>
+                            <td><b>Meaning</b></td>
+                        </tr>
+                        <tr align="center"> 
+                            <td> && </td>
+                            <td> Logical AND</td>                           
+                        </tr>
+                        <tr align="center">
+                            <td> || </td>
+                            <td> Logical OR</td>
+                        </tr>
+                        <tr align="center">
+                            <td> ! </td>
+                            <td> Logical NOT</td>
+                        </tr>     
+                        </table>
+                        <BR>
+<pre class="prettyprint prettyprinted">
+<code><span class="str">if(a == 1 && b == 2) printf("%d\t%d",a,b);</span>
+</code></pre>   
+                <li><p>Here, && is used to combine two condtions; a == 1and b == 2.This means, a value should be 1 and also b value should be 2. Then only, the next printf() statement will be executed.</p></li>
+
+                <h4><B>Bitwise Operators</B></h4>
+                <li><p><b>Bitwise complement operator (~):</b> This operator returns complement form of a number system. Converting 0s into 1s and vice versa is called complement.</p>
+                
+                <pre class="prettyprint prettyprinted">
+<code><span class="str">int x=10;</span>
+<span class="str">      ~x=?</span>    
+</code></pre>   
+                first convert 10 into binary number system. we get 0000 1010. To get the complement for this number, we convert 0s into 1s and vice versa. Thus we get 1111 0101. This is equal to -11 in decimal number system.So, ~x gives us the result -11.<BR>
+                <img src="binary10.jpg"></li>
+
+                <li><B>Bitwise AND operator (&):</B> This operator performs ANDing operation on bits. When two bits are ANDed, the result is shown in below table.
+
+                    <table align="center" cellpadding="5" width="40%">
+                        <tr align="center">
+                            <td><b>x</b></td>
+                            <td><b>y</b></td>
+                            <td><B>x & y</B></td>
+                        </tr>
+                        <tr align="center"> 
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>                           
+                        </tr>
+                        <tr align="center">
+                            <td> 0 </td>
+                            <td> 1 </td>
+                            <td> 0</td>
+                        </tr>
+                        <tr align="center">
+                            <td> 1 </td>
+                            <td> 0 </td>
+                            <td> 0</td>
+                        </tr>
+                        <tr align="center">
+                            <td> 1 </td>
+                            <td> 1 </td>
+                            <td> 1</td>
+                        </tr>     
+                        </table>
+                    <br>
+                    <p>Let us find the result of bitwise AND operation of two numbers 10 and 12.</p>    
+                    </li>
+
+                     <pre class="prettyprint prettyprinted">
+<code><span class="str">x = 10 =</span><span class="str">0000 1010</span>
+<span class="str">y = 12 =</span><span class="str">0000 1100</span>
+-------------------------
+<span class="stre">x & y =</span><span class="str"> 0000 1000 = 8 in decimal</span>    
+</code></pre>      
+                  
+                  <li><B>Bitwise OR operator ( | ):</B> This operator performs ANDing operation on bits. When two bits are ORed, the result is shown in below table.
+
+                    <table align="center" cellpadding="5" width="40%">
+                        <tr align="center">
+                            <td><b>x</b></td>
+                            <td><b>y</b></td>
+                            <td><B>x & y</B></td>
+                        </tr>
+                        <tr align="center"> 
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>                           
+                        </tr>
+                        <tr align="center">
+                            <td> 0 </td>
+                            <td> 1 </td>
+                            <td> 1</td>
+                        </tr>
+                        <tr align="center">
+                            <td> 1 </td>
+                            <td> 0 </td>
+                            <td> 1</td>
+                        </tr>
+                        <tr align="center">
+                            <td> 1 </td>
+                            <td> 1 </td>
+                            <td> 1</td>
+                        </tr>     
+                        </table>
+                    <br>
+                    <p>Let us find the result of bitwise OR operation of two numbers 10 and 12.</p>    
+                    </li>
+
+                     <pre class="prettyprint prettyprinted">
+<code><span class="str">x = 10 =</span><span class="str">0000 1010</span>
+<span class="str">y = 12 =</span><span class="str">0000 1100</span>
+-------------------------
+<span class="stre">x & y =</span><span class="str"> 0000 1110 = 14 in decimal</span>    
+</code></pre>                        
+                        
+                        <li><B>Bitwise XOR operator ( ^ ):</B> This operator performs XORing operation on bits.Here,XOR represents exclusive OR operation. The symbol '^' is called 'cap' or 'caret'.When two bits are XORed, the result is shown in below table.
+
+                    <table align="center" cellpadding="5" width="40%">
+                        <tr align="center">
+                            <td><b>x</b></td>
+                            <td><b>y</b></td>
+                            <td><B>x & y</B></td>
+                        </tr>
+                        <tr align="center"> 
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>                           
+                        </tr>
+                        <tr align="center">
+                            <td> 0 </td>
+                            <td> 1 </td>
+                            <td> 1</td>
+                        </tr>
+                        <tr align="center">
+                            <td> 1 </td>
+                            <td> 0 </td>
+                            <td> 0</td>
+                        </tr>
+                        <tr align="center">
+                            <td> 1 </td>
+                            <td> 1 </td>
+                            <td> 0</td>
+                        </tr>     
+                        </table>
+                    <br>
+                    <p>Let us find the result of bitwise XOR operation of two numbers 10 and 12.</p>    
+                    </li>
+
+                     <pre class="prettyprint prettyprinted">
+<code><span class="str">x = 10 =</span><span class="str">0000 1010</span>
+<span class="str">y = 12 =</span><span class="str">0000 1100</span>
+-------------------------
+<span class="stre">x & y =</span><span class="str"> 0000 0110 = 6 in decimal</span>    
+</code></pre>   
+                <br>
+                <h4><p><b>Program to understand operation of bitwise operators.</b></p></h4>
+                <pre class="prettyprint prettyprinted">
+<code><span class="str">#include</span><span class="str">&ltstdio.h&gt</span>
+<span class="str">void</span><span class="str"> main()</span>
+<span class="str">{</span>
+<span class="str">  int x,y;</span>
+<span class="str">  x=10;</span> 
+<span class="str">  y=12;</span>
+
+<span class="str">  printf("\n~x=%d",(~x));</span>
+<span class="str">  printf("\nx&y%d",(x&y));</span>
+<span class="str">  printf("\nx|y%d",(x|y));</span>
+<span class="str">  printf("\nx^y%d",(x^y));</span>
+<span class="str">  printf("\nx&lt&lty%d",(x&lt&lt2));</span>
+<span class="str">  printf("\nx&gt&gty%d",(x&gt&gt2));</span>
+<span class="str">}</span>
+</code></pre>
+            <h5><B>Output:</B></h5>
+            <pre class="prettyprint prettyprinted">
+<code><span class="str">~x=</span><span class="str"> -11</span>
+<span class="str">x&y=</span><span class="str"> 8</span> 
+<span class="str">x|y=</span><span class="str"> 14</span>
+<span class="str">x^y=</span><span class="str"> 6</span>
+<span class="str">x&lt&lt2=</span><span class="str"> 40</span>
+<span class="str">x&gt&gt2=</span><span class="str"> 2</span>
+</code></pre>
+    
+                <h4><B>sizeof() Operator</B></h4>
+                <li><p>This operator returns the size of a variable.</p>
+            <pre class="prettyprint prettyprinted">
+<code><span class="str">int</span><span class="str"> num;</span>
+<span class="str">sizeof(num)</span><span class="str">  returns 4 since the int type variable takes 4 byte of memory.</span>
+</code></pre>   
+                <p>sizeof() can also be used with datatypes to know the size of a datatype.</p></li>
+
+<h4><p><b>Program to know how to use sizeof() operator.</b></p></h4>
+                <pre class="prettyprint prettyprinted">
+<code><span class="str">#include</span><span class="str">&ltstdio.h&gt</span>
+<span class="str">void</span><span class="str"> main()</span>
+<span class="str">{</span>
+<span class="str">  int a;</span>
+<span class="str">  long int b;</span> 
+
+<span class="str">  printf("\n size of a= %d",sizeof(a));</span>
+<span class="str">  printf("\n size of b= %d",sizeof(b));</span>
+<span class="str">  printf("\n size of int= %d",sizeof(int));</span>
+<span class="str">  printf("\n size of long int= %d",sizeof(long));</span>
+<span class="str">}</span>
+</code></pre>
+            <h5><B>Output:</B></h5>
+            <pre class="prettyprint prettyprinted">
+<code><span class="str">size of a=</span><span class="str"> 2</span>
+<span class="str">size of b=</span><span class="str"> 4</span> 
+<span class="str">size of int=</span><span class="str"> 2</span>
+<span class="str">size of long int=</span><span class="str"> 4</span>
+</code></pre>
+
+            <h4><B>& Operator</B></h4>
+                <li><p>It is used for alloting memory for the variable..</p>
+            <pre class="prettyprint prettyprinted">
+<code><span class="str">int</span><span class="str"> x; /*allots 4 Bytes of memory for x */</span>
+</code></pre>   
+                <p>The memory address of the variable can be known using & operator. it is also called 'address of' operator.</p></li>
+
+<pre class="prettyprint prettyprinted">
+<code><span class="str">&x;</span><span class="str"> /*memory address of x */</span>
+</code></pre>
+
+                
+            <h4><B>* Operator</B></h4>
+                <li><p>It is useful to declare a pointer. A pointer is a variable that stores memory address. If x is a variabl, its memory address can be represented by &x.</p>
+            <pre class="prettyprint prettyprinted">
+<code><span class="str">int</span><span class="str"> *x; /* p is a pointer of int type */</span>
+<span class="str">p=x;</span><span class="str">    /*store memory address of x into p */</span>
+</code></pre>   
+                <p>Now p has the memory address, we can also find the value of x through p. *p represents the value of x.<br>Pointer operator is used in 2 ways: to declare a pointer and to find the value of the variable which is pointed.</p></li>
+
+                 <caption><center><b>Precedence of Operators in C</b></center></caption>
+                    <table align="center" cellpadding="5" width="65%">
+                        <tr align="center">
+                            <td><b>Operator</b></td>
+                            <td><b>Description</b></td>
+                            <td><B>Associativity</B></td>
+                        </tr>
+                        <tr align="center">
+                            <td>()</td>
+                            <td>Function call</td>
+                            <td>Left to right</td>
+                        </tr>
+                        <tr align="center">
+                            <td>[]</td>
+                            <td>Array element reference</td>
+                            <td>Left to right</td>
+                        </tr>
+                        <tr align="center">
+                            <td>+</td>
+                            <td>Unary plus</td>
+                            <td>Right to left</td>
+                        </tr>
+                        <tr align="center">
+                            <td>-</td>
+                            <td>Unary minus</td>
+                            <td>Right to left</td>
+                        </tr>
+                        <tr align="center">
+                            <td>++</td>
+                            <td>Increment</td>
+                            <td>Right to left</td>
+                        </tr>
+                        <tr align="center">
+                            <td>--</td>
+                            <td>Decrement</td>
+                            <td>Right to left</td>
+                        </tr>
+                        <tr align="center">
+                            <td>!</td>
+                            <td>Logical negation</td>
+                            <td>Right to left</td>
+                        </tr>
+                        <tr align="center">
+                            <td>~</td>
+                            <td>Ones complement</td>
+                            <td>Right to left</td>
+                        </tr>
+                        <tr align="center">
+                            <td>*</td>
+                            <td>Pointer reference</td>
+                            <td>Right to left</td>
+                        </tr>
+                         <tr align="center">
+                            <td>&</td>
+                            <td>Address</td>
+                            <td>Right to left</td>
+                        </tr>
+                        <tr align="center">
+                            <td>sizeof</td>
+                            <td>Size of an object</td>
+                            <td>Right to left</td>
+                        </tr>
+                        <tr align="center">
+                            <td>(type)</td>
+                            <td>Type cast</td>
+                            <td>Right to left</td>
+                        </tr>
+                        <tr align="center">
+                            <td>*</td>
+                            <td>Multiplication</td>
+                            <td>Left to right</td>
+                        </tr>
+                        <tr align="center">
+                            <td>/</td>
+                            <td>Division</td>
+                            <td>Left to right</td>
+                        </tr>
+                        <tr align="center">
+                            <td>%</td>
+                            <td>Modulus</td>
+                            <td>Left to right</td>
+                        </tr>
+                        <tr align="center">
+                            <td>+</td>
+                            <td>Addition</td>
+                            <td>Left to right</td>
+                        </tr>
+                        <tr align="center">
+                            <td>-</td>
+                            <td>Substraction</td>
+                            <td>Left to right</td>
+                        </tr>
+                        <tr align="center">
+                            <td><<</td>
+                            <td>left shift</td>
+                            <td>Left to right</td>
+                        </tr>
+                        <tr align="center">
+                            <td>>></td>
+                            <td>Right shift</td>
+                            <td>Left to right</td>
+                        </tr>
+                        <tr align="center">
+                            <td><</td>
+                            <td>Less than</td>
+                            <td>Left to right</td>
+                        </tr>
+                        <tr align="center">
+                            <td><=</td>
+                            <td>Less than or equal to</td>
+                            <td>Left to right</td>
+                        </tr>
+                        <tr align="center">
+                            <td>></td>
+                            <td>Greter than</td>
+                            <td>Left to right</td>
+                        </tr>
+                        <tr align="center">
+                            <td>>=</td>
+                            <td>Greater than or equal to</td>
+                            <td>Left to right</td>
+                        </tr>
+                        <tr align="center">
+                            <td>==</td>
+                            <td>Equality</td>
+                            <td>Left to right</td>
+                        </tr>
+                        <tr align="center">
+                            <td>!=</td>
+                            <td>Inequality</td>
+                            <td>Left to right</td>
+                        </tr>
+                        <tr align="center">
+                            <td>&</td>
+                            <td>Bitwise AND</td>
+                            <td>Left to right</td>
+                        </tr>
+                        <tr align="center">
+                            <td>^</td>
+                            <td>Bitwise XOR</td>
+                            <td>Left to right</td>
+                        </tr>
+                        <tr align="center">
+                            <td>|</td>
+                            <td>Bitwise OR</td>
+                            <td>Left to right</td>
+                        </tr>
+                        <tr align="center">
+                            <td>&&</td>
+                            <td>Logical AND</td>
+                            <td>Left to right</td>
+                        </tr>
+                        <tr align="center">
+                            <td>||</td>
+                            <td>Logical OR</td>
+                            <td>Left to right</td>
+                        </tr>
+                        <tr align="center">
+                            <td>?:</td>
+                            <td>Conditional Expression</td>
+                            <td>Right to left</td>
+                        </tr>
+                         <tr align="center">
+                            <td>,</td>
+                            <td>Comma Operator</td>
+                            <td>Left to right</td>
+                        </tr>   
+                        </table>   
+
+                <div>
+                    <ul class="pager">
+                        <li class="previous"><a href="c_inputfunctions.html">&larr; Previous</a></li>
+                        <li class="next"><a href="c_ifstatement.html">Next &rarr;</a></li>
+                    </ul>
+                </div>
+                
+                <div class="clearfix"></div>    
+                </div>
+                <!-- End Sample Menu -->
+                
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Footer Menu -->
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div id="copyright" class="col-md-8">
+                        Designed by Naveed Tawargeri
+
+                    </div>
+                    <div id="copyright" class="col-md-4">
+                        <p>(c) 2016 www.NavTutorials.com </P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer Menu -->
+</div>
+</div>
+<!-- JS -->
+<script type="text/javascript" src="assets/js/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="assets/js/scripts.js"></script>
+<!-- Isotope - Portfolio Sorting -->
+<script type="text/javascript" src="assets/js/jquery.isotope.js" type="text/javascript"></script>
+<!-- Mobile Menu - Slicknav -->
+<script type="text/javascript" src="assets/js/jquery.slicknav.js" type="text/javascript"></script>
+<!-- Animate on Scroll-->
+<script type="text/javascript" src="assets/js/jquery.visible.js" charset="utf-8"></script>
+<!-- Slimbox2-->
+<script type="text/javascript" src="assets/js/slimbox2.js" charset="utf-8"></script>
+<!-- Modernizr -->
+<script src="assets/js/modernizr.custom.js" type="text/javascript"></script>
+<!-- End JS -->
+</body>
+</html>
+<!-- === END FOOTER === -->

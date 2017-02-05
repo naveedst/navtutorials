@@ -1,0 +1,494 @@
+<!-- === BEGIN HEADER === -->
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <!-- Title -->
+    <title>Learn C Programming</title>
+    <!-- Meta -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <meta name="description" itemprop="description" content="navtutorials.com is a programming blog focused on programming, C programming, algorithms, data structures, C programming interview questions, Data structures interview questions, java interview questions, c programming source codes,c programming functions, functions, c-functions, c-function definition, c function definition, advantages of function, parts of functions, parts of c fuction, function definition, function declaration,different ways of writing function, function without parameters and without return type,function with return type and without parameters,function with return type but with parameter,function with return type and with parameters, calling function, navtutorials.com, navtutorials, nav, newtutorials."/>
+
+    <meta name="author" content="Naveed">
+
+    <meta name="keywords" itemprop="keywords" content="c programming functions, functions, c-functions, c-function definition, c function definition, advantages of function, parts of functions, parts of c fuction, function definition, function declaration,different ways of writing function, function without parameters and without return type,function with return type and without parameters,function with return type but with parameter,function with return type and with parameters, calling function, navtutorials.com, navtutorials, nav, newtutorials. "/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <!-- Favicon -->
+    <link href="favicon.html" rel="shortcut icon">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/nexus.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/custom.css" rel="stylesheet">
+    <!-- Google Fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,300" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
+
+    <!--My fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    
+</head>
+<body>
+    <div id="pre_header" class="visible-lg"></div>
+    <div id="header" class="container">
+        <div class="row">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="../index.html" title="">
+                    <img src="assets/img/logo.png" alt="Logo" />
+                </a>
+            </div>
+            <!-- End Logo -->
+            
+            <!-- Top Menu -->
+            <div class="col-md-12 margin-top-30">
+                <div id="hornav" class="pull-right visible-lg">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../index.html">Home</a></li>
+
+                         <li><span>Tutorials</span>
+                            <ul>
+                                <li><a href="../programming_library.html">Programming</a></li>
+                                <li><a href="../academic_library.html">Academic</a></li>
+                                <li><a href="../web_programming_library.html">Web Programming</a></li>
+                                <li><a href="../exam_prepration_library.html">Exam Prepration</a></li> 
+                                <li><a href="../general_aptitude_library.html">General Aptitude</a></li>
+                                <li><a href="../verbal_ability_library.html">Verbal Ability</a></li>
+                            </ul>
+                        </li>
+
+
+
+                        <li><span>Interview</span>
+                            <ul>
+                                <li><a href="../interview_section/interview_question_index.html">Interview Questions</a></li>
+                                <li><a href="../code_snippets_library.html">Code Snippets</a></li>
+                            </ul>
+                        </li>   
+
+
+                        <li><span>Blog</span>
+                            <ul>
+                                <li><a href="../blog.html">Blog</a></li>
+                                <li><a href="../article.html">Articles</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li><a href="../books.html">Books</a></li>
+                        <li><a href="../contact_us.html">Contact</a></li>
+                    </ul>               </div>
+                </div>
+                <div class="clear"></div>
+                <!-- End Top Menu -->
+            </div>
+        </div>
+        <!-- === END HEADER === -->
+        <div id="content" class="container">
+            <!-- === BEGIN CONTENT === -->    <div class="row margin-vert-30">
+            <!-- Begin Sidebar Menu -->
+            <div class="col-md-3">
+                <ul class="list-group sidebar-nav" id="sidebar-nav">
+                     <!-- Home -->
+                    <li class="list-group-item">
+                       <a href="c_library.html">C-Home</a>
+                    </li>
+                    <!-- End of home-->
+                    
+                    <!-- Typography -->
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-fundamental">Fundamentals in C</a>
+                        <ul id="collapse-fundamental" class="collapse">
+                            <li><a href="c_keywords.html"></i>Keywords and Constants</a></li>
+                            <li><a href="c_datatypes.html">Data Types</a></li>
+                            <li><a href="c_inputfunctions.html">Input/Output Functions</a></li>
+                            <li><a href="c_operators.html">Operators in C</a></li>
+                        </ul>
+                    </li>
+                    <!-- End Typography -->
+                    <!-- Control statements -->
+                    <li class="list-group-item list-toggle">
+                        <a class="accordion-toggle" href="#collapse-control" data-toggle="collapse">Control Statements in C</a>
+                        <ul id="collapse-control" class="collapse">
+                            <li><a href="c_ifstatement.html"></i>if.. else statement</a></li>
+                            <li><a href="c_dowhile.html"></i>do.. while loop</a></li>
+                            <li><a href="c_while.html"></i>While loop</a></li>
+                            <li><a href="c_forloop.html"></i>for loop</a></li>
+                            <li><a href="c_switch.html">Switch Statement</a></li>
+                            <li><a href="c_break.html">break statement</a></li>
+                            <li><a href="c_continue.html">Continue Statement</a></li>
+                            <li><a href="c_goto.html">goto statement</a></li>
+                            <li><a href="c_return.html">return statement</a></li>
+                        </ul>
+                    </li>                    <!-- End Control statements -->
+                    <!-- Arrays -->
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-arrays">Arrays</a>
+                        <ul id="collapse-arrays" class="collapse">
+                            <li><a href="c_1darray.html">Single dimensional Array</a></li>
+                            <li><a href="c_2darray.html">Two dimensional Array</a></li>
+                            <li><a href="c_3darray.html">Three dimensional Array</a></li>
+                        </ul>
+                    </li>
+                    <!-- End Arrays -->
+                    <!-- Functions -->
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-functions">Functions</a>
+                        <ul id="collapse-functions" class="collapse">
+                            <li><a href="c_functions.html">Parts of function</a></li>
+                            <li><a href="c_formalarguments.html">Formal & Actual Arguments</a></li>
+                            <li><a href="c_recursivefunction.html">Recursive Function</a></li>
+                        </ul>
+                    </li>
+                    <!-- End Functions -->
+
+                    <!-- Strings -->                    
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-strings">Strings</a>
+                        <ul id="collapse-strings" class="collapse">
+                            <li><a href="c_characters.html">Characters</a></li>
+                            <li><a href="c_strings.html">Strings</a></li>
+                            <li><a href="c_strlen.html">strlen()</a></li>
+                            <li><a href="c_strcpy.html">strcpy() and strncpy()</a></li>
+                            <li><a href="c_strcat.html">strcat()</a></li>
+                            <li><a href="c_strcmp.html">strcmp() and strnicmp()</a></li>
+                            <li><a href="c_strupr.html">strupr() and strlwr()</a></li>
+                            <li><a href="c_strrev.html">strrev()</a></li>
+                            <li><a href="c_strchr.html">strchr()</a></li>
+                            <li><a href="c_strstr.html">strstr()</a></li>
+                        </ul>
+                    </li>
+                    <!-- End of Strings -->
+                    
+                    <!-- Storage classes -->
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-storage">Storage Classes</a>
+                        <ul id="collapse-storage" class="collapse">
+                            <li><a href="c_automicstorage.html">Automic storage class</a></li>
+                            <li><a href="c_registerstorage.html">Register storage class</a></li>
+                            <li><a href="c_staticstorage.html">static storage class</a></li>
+                            <li><a href="c_externalstorage.html">External storage class</a></li>
+                            <li><a href="c_localvariables.html">Local variables</a></li>
+                        </ul>
+                    </li>
+                    <!-- End Storage classes -->
+
+                    <!-- Pointers -->
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-pointers">Pointers</a>
+                        <ul id="collapse-pointers" class="collapse">
+                            <li><a href="c_pointers.html">Pointers arithmetic</a></li>
+                            <li><a href="c_dynamicmemory.html">Dynamic memory allocation</a></li>
+                            <li><a href="c_arraypointers.html">Array of pointers</a></li>
+                            <li><a href="c_functionpointers.html">Function pointers</a></li>
+                            <li><a href="c_callback.html">callback mechanism</a></li>
+                            <li><a href="c_danglingpointers.html">Dangling pointers</a></li>
+                            <li><a href="c_nearpointers.html">Near,far and huge pointers</a></li>
+                            <li><a href="c_genericpointer.html">Generic pointer</a></li>
+                            <li><a href="c_sizeofpointer.html">size of a Pointer</a></li>
+                            <li><a href="c_pointertopointer.html">Pointer to pointer</a></li>
+                            <li><a href="c_pointeradvantage.html">Advantages & Disadvantages</a></li>
+                        </ul>
+                    </li>
+                    <!-- End of Pointers -->
+
+                    <!-- Structures and unions -->
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-structures">Structures and Unions</a>
+                        <ul id="collapse-structures" class="collapse">
+                            <li><a href="c_structures.html">Introduction</a></li>
+                            <li><a href="c_structurepointer.html">Structure pointer</a></li>
+                            <li><a href="c_arraayofstructure.html">Array of structures</a></li>
+                            <li><a href="c_arraypointersstructures.html">Array of Pointers to structures</a></li>
+                            <li><a href="c_nestedstructure.html">Nested Structures</a></li>
+                            <li><a href="c_union.html">Union</a></li>
+                        </ul>
+                    </li>
+                    <!-- Structures and Unions-->
+
+
+                    <!-- Files -->
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-files">Files</a>
+                        <ul id="collapse-files" class="collapse">
+                            <li><a href="c_files.html">Files concepts</a></li>
+                            <li><a href="c_fileswithcharacter.html">Files with characters</a></li>
+                            <li><a href="c_fileswithstrings.html">Files with strings</a></li>
+                            <li><a href="c_binaryfiles.html">Binary files</a></li>
+                            <li><a href="c_randomaccessoffile.html">Random accessing of file</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- End of files -->
+
+                    <!-- command line-->
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-commandline">Command Line</a>
+                        <ul id="collapse-commandline" class="collapse">
+                            <li><a href="c_commandlinearguments.html">Command Line Arugments</a></li>
+                            <li><a href="c_showcommand.html">Show Command</a></li>
+                            <li><a href="c_cpycommand.html">copy command</a></li>
+                            <li><a href="c_destroycommand.html">destroy command</a></li>
+                            <li><a href="c_freshcommand.html">fresh command</a></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <!-- End of Command line -->
+                </ul>
+            </div>
+            <!-- End Sidebar Menu --> 
+
+            <div class="col-md-9">
+
+            <div style="margin-left:03px;margin-top:10px;">
+                <div id="bc2" class="myBreadcrumb">
+                <a href="../index.html" class="active"><i class="fa fa-home fa-2x"></i></a>
+                <a href="../programming_library.html">Programming Library</a>
+                <a href="c_functions.html"><div>Functions in C</div></a>
+            </div>  
+                <h1><B><center>Functions</B></cemter></h1>
+                <HR>
+                <li><p>Function is a self contained program segment that carries out some specific. well defined specific task. Every c program contains one or more functions.One of these functions must be called 'main'.</p></li>    
+                
+                <h4><B>Advantages of functions:</B></h4> 
+                <li><p>Once a function is written, it can be called and used repeatedly as and when required.</p></li>
+
+                <li><p>In structured programming, the main task is divided into sub tasks which are represented by functions. This type of programming is very useful in developing big and complex software. </p></li>
+
+                <li><p>Designing a program will become easy because of fucntions.</p></li>
+
+                <li><p>Functions make debugging of a program easy.</p></li>    
+
+                <li><p>Functions will reduce the lenght of the source code.</p></li>
+
+                <li><p>Functions will help in top down programming approach.</p></li>
+
+                <h4><B>Parts of function:</B></h4>
+                <li><p>Any function contains 2 parts.They are: <BR>
+                    <ul>
+                    <li><p>Function declaration</p></li>
+                    <li><p>Function definition.</p></li>
+                    </ul>
+                </li>
+
+                <p><B>Function declaration:</b>
+                <li><p>This is also called 'function protorype'. It represents function name, function parameters and return type of the function in the following sequence.</p>
+
+                 <pre class="prettyprint prettyprinted">
+<code><span class="str"> return-type functionname(type parameter1, type parameter2,..);</span>
+</code></pre>
+
+                <p>A Parameter is a variable that is useful to receive data from outside into the function. A function may have parameters or may not have any parameters. The return-type represents which type of output or result is returned by the function.</p>
+
+                <pre class="prettyprint prettyprinted">
+<code><span class="str"> <B>Example:</B> double sum(double x, double y);</span>
+</code></pre>                    
+                <p>Here, the return-type is 'double'. Function name is 'sum'. There are two parameters x and y which are declared as 'double' type. so this function receives two double type values from outside and finds the sum and returns the sum value as double type result.</p>
+            
+            <pre class="prettyprint prettyprinted">
+<code><span class="str"> <B>Example:</B> void sum(double x, double y);</span>
+</code></pre>
+
+                <p>Here, return-type is declared as void. This means this function cannot return any value.</p>
+
+<pre class="prettyprint prettyprinted">
+<code><span class="str"> <B>Example:</B> int square(int num);</span>
+</code></pre>
+        
+            <p>This function is returning integer type result. It takes another integer value as input as represented by the parameter num. This function may calculate the square value of a given integer number and return that result.</p>
+
+            <pre class="prettyprint prettyprinted">
+<code><span class="str"> <B>Example:</B> long int factorial(int n);</span>
+</code></pre>
+
+            <p>This function returns 'long int' type result which is the factorial value of the given integer number 'n'.</p>
+
+            <pre class="prettyprint prettyprinted">
+<code><span class="str"> <B>Example:</B> void myMenu(void);</span>
+</code></pre>
+            <p>'myMenu' is the function name. This function does not return any value and does not accept any value.</p>
+            </li>    
+
+            <p><B>Function definition:</b>
+                <li><p>It compromises of function header and body. Here, the function header looks like function prototype but there will not be semicolon at the end.</p></li>
+                <li><p>Function body represents a group of statements written inside left and right curly braces.</p></li> 
+                <li><p>Function body represents the actual logic to solve the task</p></li>   
+
+                <pre class="prettyprint prettyprinted">
+<code><span class="str"> <B>Example:</B> int square(int num)       /* this is function header */</span>
+<span class="str">           {</span>
+<span class="str">              int result;</span>
+<span class="str">              result=num*num;</span>
+<span class="str">              return result;</span>
+<span class="str">           }</span>
+</code></pre>
+                
+            <h4><B>Note:</B></h4>
+            <li><p>Function can return only one value. It can never return more than one value.</p></li>    
+
+            <h4><B>Different ways of writing function:</B></h4>
+            <p><B>1. A function without parameters and without return type.</B></p>
+
+            <pre class="prettyprint prettyprinted">
+<code><span class="str">          void sum()</span>
+<span class="str">           {</span>
+<span class="str">              int x=10, y=25;</span>
+<span class="str">              int z=x+y;</span>
+<span class="str">              printf("\n Result=%d",z);</span>
+<span class="str">           }</span>
+</code></pre>
+            <li><p>In above example, sum() does not have any parameters, it cannot accept any values from outside. So, the values are taken inside the function as x and y. They are added and the result is displayed. Displaying the result does not mean returning the result. It means this function is not returning any result.So, 'void' is writen before the function. While calling this function,we need not pass any values to this function. We can simply call it as:</p></li>
+            <pre class="prettyprint prettyprinted">
+<code><span class="str">    sum();</span>
+</code></pre>    
+            
+
+            <h4><p><b>Program: A function without parameters and without return type.</b></p></h4>
+                <pre class="prettyprint prettyprinted">
+<code><span class="str">#include</span><span class="str">&ltstdio.h&gt</span>
+<span class="str">void</span><span class="str"> main()</span>
+<span class="str">{</span>
+<span class="str">  int x=10,y=25;</span>
+<span class="str">  int z=x+y;</span>
+<span class="str">     printf("\n Result=%d",z);</span>
+<span class="str">     }
+
+<span class="str">     void main()</span>
+<span class="str">     {</span>    
+<span class="str">          sum();</span>
+<span class="str">     }</span>
+<span class="str">}</span>
+</code></pre>
+                 <h5><B>Output:</B></h5>
+            <pre class="prettyprint prettyprinted">
+<code><span class="str">Result=35</span>
+</code></pre>    
+            
+            <p><B>2. A function with return type and without parameters.</B></p>
+
+            <pre class="prettyprint prettyprinted">
+<code><span class="str">          int sum()</span>
+<span class="str">           {</span>
+<span class="str">              int x=10, y=25;</span>
+<span class="str">              int z=x+y;</span>
+<span class="str">              return z;   /* return the result */</span>
+<span class="str">           }</span>
+</code></pre>
+            
+            <li><p>In above example the observe 'int' before the function name. It means this function returns integer type result.This is done by the statement:</p>
+
+            <pre class="prettyprint prettyprinted">
+<code><span class="str">    return z;</span>
+</code></pre>    
+            <p>While calling this function, we need not pass any values. But we can catch the result returned by this function into an integer type variable, say 'result' as:</p>
+
+            <pre class="prettyprint prettyprinted">
+<code><span class="str"> result=sum();</span>
+</code></pre>
+       </li>       
+
+            <p><B>3. A function with return type but with parameters.</B></p>
+
+            <pre class="prettyprint prettyprinted">
+<code><span class="str">void int( int x, int y)   /* x and y are parameters */</span>
+<span class="str">{</span>
+<span class="str">       int z=x+y;</span>
+<span class="str">       printf("\nResult= %d",z);   /* display the result */</span>
+<span class="str">}</span>
+</code></pre>
+            
+            <li><p>In above example since the function has two paramters, it can accept two integer values from outside. Those values are stores in x and y respectively and then added. While calling this function, we can write:</p>
+
+            <pre class="prettyprint prettyprinted">
+<code><span class="str">    sum(10,25);</span>
+</code></pre>    
+             
+             <p><B>4. A function with return type and with parameters.</B></p>
+
+            <pre class="prettyprint prettyprinted">
+<code><span class="str">int sum( int x, int y)   /* x and y are parameters */</span>
+<span class="str">{</span>
+<span class="str">       int z=x+y;</span>
+<span class="str">       return z;   /* display the result */</span>
+<span class="str">}</span>
+</code></pre>
+            
+            <li><p>While calling this type of function, we should pass two integer values to the function and it returns another integer type result</p>
+
+            <pre class="prettyprint prettyprinted">
+<code><span class="str"> result=sum(10,25);  /* pass 10 and 25 to function and store sum into the result */</span>
+</code></pre>   
+            
+            <h4><B>Calling function:</B></h4>
+            <li><p>Once a function is written, it can be called from any program. Also, a function can be called from another function.</p> 
+
+            <pre class="prettyprint prettyprinted">
+<code><span class="str"> square(16);</span>
+<span class="str">   or </span>
+<span class="str"> square(n);</span>
+</code></pre>   
+    
+            <p>Here, we are calling the square function and also passing the value 16 is called argument. square() function receives this argument into its parameter and returns square value of 16. This result is 4 and is returned to the calling program or function.</p></li>
+                
+
+                 <div>
+                    <ul class="pager">
+                        <li class="previous"><a href="c_3darray.html">&larr; Previous</a></li>
+                        <li class="next"><a href="c_formalarguments.html">Next &rarr;</a></li>
+                    </ul>
+                </div>
+
+                <div class="clearfix"></div>
+                    
+                </div>
+                
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+        <!-- Footer Menu -->
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div id="copyright" class="col-md-8">
+                        Designed by Naveed Tawargeri
+
+                    </div>
+                    <div id="copyright" class="col-md-4">
+                        <p>(c) 2016 www.NavTutorials.com </P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer Menu -->
+</div>
+</div>
+<!-- JS -->
+<script type="text/javascript" src="assets/js/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="assets/js/scripts.js"></script>
+<!-- Isotope - Portfolio Sorting -->
+<script type="text/javascript" src="assets/js/jquery.isotope.js" type="text/javascript"></script>
+<!-- Mobile Menu - Slicknav -->
+<script type="text/javascript" src="assets/js/jquery.slicknav.js" type="text/javascript"></script>
+<!-- Animate on Scroll-->
+<script type="text/javascript" src="assets/js/jquery.visible.js" charset="utf-8"></script>
+<!-- Slimbox2-->
+<script type="text/javascript" src="assets/js/slimbox2.js" charset="utf-8"></script>
+<!-- Modernizr -->
+<script src="assets/js/modernizr.custom.js" type="text/javascript"></script>
+<!-- End JS -->
+</body>
+</html>
+<!-- === END FOOTER === -->
